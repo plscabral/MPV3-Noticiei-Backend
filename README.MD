@@ -15,6 +15,7 @@ Uma plataforma que tem como objetivo, levar as noticias de uma forma fácil, sim
 * [![Python][Python]][Python-url]
 * [![FastAPI][FastAPI]][FastAPI-url]
 * [![SQLite][SQLite]][SQLite-url]
+* [![Docker][Docker]][Docker-url]
 
 ### Pré-requisitos
 
@@ -36,12 +37,29 @@ Uma plataforma que tem como objetivo, levar as noticias de uma forma fácil, sim
    ```sh
    pip install -r requirements.txt
    ```
+
+### Docker
+1. Buildar projeto
+   ```sh
+   docker build -t noticiei-backend .
+   ```
+2. Configurar a porta de acesso
+   ```sh
+   docker run -p 8000:8000 noticiei-backend
+   ```
    
 ### Execução
 
 1. Rodar o comando abaixo:
    ```sh
    python -m uvicorn main:app --reload
+   ```
+
+### Documentação
+
+1. Basta acessar a rota abaixo:
+   ```sh
+   http://localhost:8000/docs
    ```
 
 <!-- CONTACT -->
@@ -57,3 +75,5 @@ Uma plataforma que tem como objetivo, levar as noticias de uma forma fácil, sim
 [FastAPI-url]: https://fastapi.tiangolo.com/
 [SQLite]: https://img.shields.io/badge/SQLite-20232A?style=for-the-badge&logo=sqlite&logoColor=61DAFB
 [SQLite-url]: https://www.sqlite.org/index.html
+[Docker]: https://img.shields.io/badge/Docker-20232A?style=for-the-badge&logo=docker&logoColor=61DAFB
+[Docker-url]: https://www.docker.com/
