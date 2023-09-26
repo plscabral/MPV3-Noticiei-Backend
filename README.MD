@@ -25,7 +25,7 @@ Uma plataforma que tem como objetivo, levar as noticias de uma forma fácil, sim
 
 1. Clonar o repositório
    ```sh
-   git clone https://github.com/plscabral/MVP1-Noticiei-Back.git
+   git clone https://github.com/plscabral/MVP3-Noticiei-Backend.git
    ```
 2. Criar arquivo .env e preencher conforme o exemplo:
    ```sh
